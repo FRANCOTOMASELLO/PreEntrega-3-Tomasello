@@ -1,0 +1,25 @@
+@import "./variables";
+
+.navbar{
+    display: none;
+    width: 400px;
+    &-items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    &-link{
+        text-decoration: none;
+        color: $color-secundario ;
+        display: block;
+        height: 112px;
+        padding-top: 42px;
+        &:hover{
+            border-bottom: 4px solid $color-principal;
+        }
+    }
+    @media (min-width: 1115px){
+        display: block;
+    }
+}

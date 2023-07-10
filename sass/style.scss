@@ -1,0 +1,36 @@
+
+@import "./initial.scss";
+@import "./header.scss";
+@import "./variables.scss";
+@import "./modal-navbar.scss";
+@import "./navbar.scss";
+@import "./mixin.scss";
+@import "./gallery.scss";
+@import "./details.scss";
+@import "./input.scss";
+@import "./modal-cart";
+@import "./modal-gallery";
+
+.main-container{
+    width: 350px;
+    //border: 1px solid black;
+    margin: auto;
+    position: relative;
+    @media (min-width: 1115px){
+        width: 1115px;
+    }
+}
+
+.menu-icon{
+    width: 20px;
+}
+
+.show{
+    display: block;
+}
+
+.cart-vacio{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+}

@@ -1,0 +1,43 @@
+@import "./mixin";
+@import "./variables";
+
+.input{
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-minus{
+        width: 25px;
+        height: 100%;
+        padding: 3px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &-number{
+        width: 100%;
+        border: none;
+        background-color: rgb(98, 121, 185);
+        height: 50px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+        text-align: center;
+        outline: none;
+        color: white;
+        @media (min-width:1115px){
+            width: 70%;
+        }
+    }
+    &-plus{
+        width: 25px;
+        height: 100%;
+        padding-top: 13px;
+        padding-left: 3px;
+        padding-bottom: 13px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

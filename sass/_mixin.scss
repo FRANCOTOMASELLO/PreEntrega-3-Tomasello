@@ -1,0 +1,12 @@
+
+
+@mixin modal-background ($background-color, $position, $top, $left, $width, $height, $display, $z-index) {
+    background-color: $background-color;
+    position: $position;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    display: $display;
+    z-index: $z-index;
+}

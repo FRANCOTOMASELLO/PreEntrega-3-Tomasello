@@ -1,0 +1,73 @@
+@import "./variables";
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width:"1115px"){
+        height: 112px;
+        border: 1px solid $color-secundario;
+       }
+    &-nav{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width:"1115px"){
+            width: 590px;
+        }
+    }
+    .menu-icon{
+        menu-icon:hover{
+            cursor: pointer;
+        }
+        @media (min-width:"1115px"){
+            display: none;
+        }
+    }
+    .cart{
+        align-items: center;
+        width: 70px;
+        position: relative;
+        padding-left: 30px; 
+        
+        @media (min-width:"1115px"){
+           width: 125px;
+          
+        }
+        &-notification{
+            display: none;
+            width: 15px;
+            background-color: $color-principal;
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
+            top: -2px;
+            color: white;
+            font-size: 1rem;
+        }
+       &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+.cart-img{
+    width: 35px;
+}
+
+.menu-logo{
+    @media (min-width:1115px){
+       width: 250px;
+    margin-right: 20px; 
+    }
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}

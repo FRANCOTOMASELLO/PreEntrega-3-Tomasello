@@ -1,0 +1,34 @@
+@import "./mixin";
+@import "./variables";
+
+.modal-navbar{
+    display: none;
+    &-background{
+        @include modal-background(rgb(27, 29, 29), absolute, 0, 0, 100%, 100%, none, 1);
+    }
+    background-color: white;
+    height: 100%;
+    width: 250px;
+    padding: 28px 24px;
+    &-items{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 50px;
+    }
+    &-link{
+        text-decoration: none;
+        color: $color-terciario;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }   
+}
+
+.close-icon{
+    width: 35px;
+    &:hover{
+        cursor: pointer;
+    }
+}

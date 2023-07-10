@@ -1,0 +1,95 @@
+@import "./mixin";
+@import "./variables";
+
+
+.modal-gallery{
+    &-background{ 
+        display: none;
+        @include modal-background(hsla(220, 14%, 34%, 0.555), absolute, 0, 0, 100%, 100%, none, 1); 
+        place-content: center;
+        padding-left: 25%;
+        
+    }
+   
+    &-close-container{
+        text-align: right;
+        height: 30px;
+    }
+    &-close{
+        width: 30px;
+        margin-top: 80px;
+        margin-right: 350px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &-img{
+        opacity: 0%;
+    }
+    &-container{
+        background-image: url(../images/producto1.png);
+        width: 460px;
+        position: relative;
+        @media (min-width:1115px){
+            border-radius: 16px;
+            height: 420px;
+            margin-top: 70px;
+            background-size: cover;
+            border: 1px solid $color-principal;
+            margin-bottom: 32px;
+            
+        }
+     }
+ 
+}
+.modal-miniaturas{
+    display: none;
+    @media (min-width: 1115px){
+        display: flex;
+        gap: 20px;
+    }
+}
+.modal-miniatura{
+    width: 90px;
+    border-radius: 16px;
+    &:hover{
+        cursor: pointer;
+        border: solid 1px $color-principal;
+    }
+}
+
+.modal-miniatura{
+    width: 120px;
+}
+
+.modal-previous{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top:190px ;
+    left:150px ;
+    &:hover{
+        cursor: pointer;
+    }
+    @media (min-width: 1115px){
+        display: none;
+    }
+}
+
+.modal-next{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top:100px ;
+    left:100px ;
+    &:hover{
+        cursor: pointer;
+    }
+    @media (min-width: 1115px){
+        display: none;
+    }
+}

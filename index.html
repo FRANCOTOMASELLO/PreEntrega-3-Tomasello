@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Aeronautico</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+<main class="main-container">
+    <header class="header">
+      <div class="header-nav">
+        <img src="./images/png-transparent-hamburger-button-computer-icons-menu-menu-rectangle-desktop-wallpaper-button.png" alt="menu icon" class="menu-icon">
+        <img src="./images/logo-aerolineas2.png" alt="logo" class="menu-logo">
+         <nav class="navbar">   
+            <ul class="navbar-items">
+                <li><a href="" class="navbar-link"> Inicio</a></li>
+                <li><a href="" class="navbar-link"> Productos</a></li>
+                <li><a href="" class="navbar-link"> Sobre Nosotros</a></li>
+                <li><a href="" class="navbar-link"> Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+        <div class="modal-navbar-background">
+           <nav class="modal-navbar">
+            <img src="./images/close.jpg" alt="close" class="close-icon">
+            <ul class="modal-navbar-items">
+                <li><a href="" class="modal-navbar-link"> Inicio</a></li>
+                <li><a href="" class="modal-navbar-link"> Productos</a></li>
+                <li><a href="" class="modal-navbar-link"> Sobre Nosotros</a></li>
+                <li><a href="" class="modal-navbar-link"> Contacto</a></li>
+            </ul>
+           </nav> 
+        </div>
+        <div class="header-cart">
+            <div class="cart">
+                <div class="cart-notification">0</div>
+                <img src="./images/carrito.png" alt="carrito" class="cart-img">
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <article class="gallery">
+                <div class="gallery-container">
+                    <img src="./images/previous.png" alt="previous" class="previous">
+                    <img src="./images/next.png" alt="next" class="next">
+                </div>
+                <div class="miniaturas">
+                    <img id="1" class="miniatura" src="./images/producto1.png" alt="Producto Bose">
+                    <img id="2" class="miniatura" src="./images/producto2.png" alt="Producto Bolso">
+                    <img id="3" class="miniatura" src="./images/producto3.png" alt="Producto Bolso Headset">
+                    <img id="4" class="miniatura" src="./images/producto4.png" alt="Producto Llavero">
+                </div>
+        </article>  
+        <article class="details">
+            <h2 class="details-company">
+                Mundo Aeronautico
+            </h2>
+            <h2 class="details-title">
+                Bose A30 Aviation Headset
+            </h2>
+            <p class="details-description">
+                Los auriculares para pilotos Bose A30 se utilizan mejor cuando el ruido es generalizado, se requiere comodidad y la comunicación es fundamental. El Bose A30 es el auricular para pilotos que se coloca alrededor de la oreja más cómodo y de mayor rendimiento que jamás se haya creado. Mejora dramáticamente cada vuelo con la mejor combinación de comodidad, claridad de audio y cancelación activa de ruido en el mercado.
+            </p>
+            <div class="details-prices">
+                <p class="details-price-now"> $120.000 <span class="details-discount">50%</span></p>
+                <p class="details-price-before">$240.000</p>
+            </div>
+            <div class="details-quantity">
+                <div class="input">
+                    <img src="./images/menos.png" alt="Menos" class="input-minus">
+                    <input type="text" value="0" class="input-number">
+                    <img src="./images/mas.png" alt="Mas" class="input-plus">
+                </div>
+                <button class="details-button"><img class="cart-img" src="./images/carrito.png" alt="Añadir al carrito">  Añadir al carrito</button>
+            </div>
+        </article>
+    </section>
+    
+    <div class="cart-modal">
+        <p class="cart-modal-title">
+            Carrito
+        </p>
+        <div class="cart-modal-checkout-container">
+            <div class="cart-modal-details-container">
+                <img src="./images/producto1.png" alt="" class="cart-modal-img">
+                <div>
+                    <p class="cart-modal-product-container">Bose A30 Aviation Headset</p>
+                    <p class="cart-modal-price-container">$120.000 x2 <span class="cart-modal-price">$240.000</span></p>
+                </div>
+                <img src="./images/borrar.png" alt="Borrar" class="cart-modal-delete">
+            </div>
+            <button class="cart-modal-checkout">Pagar Ahora</button>
+        </div>
+    </div>
+    <div class="modal-gallery-background">
+      <article class="modal-gallery">
+        <div class="modal-gallery-close-container">
+        <img src="./images/close.jpg" alt="icon close" class="modal-gallery-close">
+        </div>
+        <div class="modal-gallery-container">
+            <img src="./images/previous.png" alt="previous" class="modal-previous">
+            <img src="./images/next.png" alt="next" class="modal-next">
+        </div>
+        <div class="modal-miniaturas">
+            <img id="m1" class="modal-miniatura" src="./images/producto1.png" alt="Producto Bose">
+            <img id="m2" class="modal-miniatura " src="./images/producto2.png" alt="Producto Bolso">
+            <img id="m3" class="modal-miniatura" src="./images/producto3.png" alt="Producto Bolso Headset">
+            <img id="m4" class="modal-miniatura" src="./images/producto4.png" alt="Producto Llavero">
+        </div>
+      </article>  
+    </div>
+
+</main>
+
+
+<script src="./main.js"></script>
+
+
+</body>
+</html>
